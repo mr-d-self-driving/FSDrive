@@ -1,6 +1,6 @@
 # FutureSightDrive: Thinking Visually with Spatio-Temporal CoT for Autonomous Driving
 
-Official implementation for ["FutureSightDrive: Thinking Visually with Spatio-Temporal CoT for Autonomous Driving"](https://arxiv.org/abs/2505.17685) is coming soon.
+Official implementation for ["FutureSightDrive: Thinking Visually with Spatio-Temporal CoT for Autonomous Driving"](https://arxiv.org/abs/2505.17685) is coming in June.
 
 ## Citing
 
