@@ -174,7 +174,7 @@ python ./MoVQGAN/vis.py \
 
 ## 📜 Citing
 
-If you find FSDrive is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry.
+If you find FSDrive is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry:
 
 ```
 @article{zeng2025FSDrive,
