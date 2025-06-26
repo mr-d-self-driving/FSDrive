@@ -42,16 +42,16 @@ https://github.com/user-attachments/assets/a99a14a3-a892-4cbe-ac1f-66b777d9081b
 Create the required environment through the following steps:
 
 ```bash
-git clone https://github.com/MIV-XJTU/FSDrive.git
-cd FSDrive
+git clone https://github.com/MIV-XJTU/FSDrive.git && cd FSDrive
 
-conda create -n FSDrive python=3.10
+conda create -n FSDrive python=3.10 -y && conda activate FSDrive
 
-cd LLaMA-Factory && pip install -e ".[torch,metrics,deepspeed,liger-kernel,bitsandbytes,vllm,qwen,modelscope]"
+# CUDA 12.4
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
 
-cd ..
+cd LLaMA-Factory && pip install -e ".[metrics,deepspeed,liger-kernel,bitsandbytes]" --no-build-isolation
 
-pip install -r requirements.txt
+cd .. && pip install -r requirements.txt
 ```
 <p align="right"><a href="#readme-top"><img src=https://img.shields.io/badge/back%20to%20top-red?style=flat
 ></a></p>
