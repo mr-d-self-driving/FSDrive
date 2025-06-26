@@ -38,4 +38,4 @@ transformers==4.49.0
 trl==0.9.6
 typing_extensions==4.12.2
 uvicorn==0.34.0
-vllm==0.7.3
+vllm
