@@ -96,12 +96,6 @@ class CameraRender(BaseRender):
             data_path, _, _, _, imsize = self.get_image_info(
                 sample_data_token, nusc)
             image = self.load_image(data_path, cam)
-            # data_path = "/home/zengshuang.zs/HDMapNet/cot_divider/" + f"{sample_token}.png"
-            # image = np.array(Image.open(data_path))
-            # image = cv2.resize(image, (imsize[0], imsize[1]))
-            # # 水平翻转图像
-            # image = cv2.flip(image, 1)
-            # # image = np.zeros((imsize[1], imsize[0], 3), dtype=np.uint8)
             self.update_image(image, i, cam)
 
     def load_image(self, data_path, cam):
@@ -210,13 +204,3 @@ class CameraRender(BaseRender):
             cam_intrinsic = None
             imsize = None
         return data_path, cs_record, pose_record, cam_intrinsic, imsize
-
-    # def save_fig(self, filename):
-    #     """Save only the front camera view (CAM_FRONT)."""
-    #     plt.draw()  # 确保绘图完成
-    #     ax = self.get_axis(1)  # 获取CAM_FRONT的子图轴（索引为1）
-    #     extent = ax.get_window_extent().transformed(self.fig.dpi_scale_trans.inverted())
-    #     self.fig.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
-    #     plt.margins(0, 0)
-    #     self.fig.savefig(filename, bbox_inches=extent, pad_inches=0)
-    #     print(f'saving to {filename}')

@@ -41,13 +41,6 @@ if TYPE_CHECKING:
 
 logger = logging.get_logger(__name__)
 
-num_path="/home/zengshuang.zs/LLaMA-Factory/create_data/token2num.json"
-token_path="/home/zengshuang.zs/LLaMA-Factory/create_data/num2token.json"
-with open(num_path, 'r') as f:
-    token2num = json.load(f)
-with open(token_path, 'r') as f:
-    num2token = json.load(f)
-
 
 import lmdb
 import torch
@@ -66,8 +59,6 @@ def deserialize_numpy(serialized_array):
     """Deserialize the Numpy array."""
     return pickle.loads(serialized_array)
 
-# 创建或打开一个LMDB数据库
-env = lmdb.open('/home/zengshuang.zs/query_ego', map_size=int(1e12))  # map_size可以适当调整大一些
 
 def write_tensor(key, tensor):
     """Write a tensor to LMDB."""
@@ -247,15 +238,6 @@ def _get_preprocessed_dataset(
             desc="Running tokenizer on dataset",
         )
 
-    # query = []
-    # for token in dataset["_token"]:
-    #     query.append(read_query(token).tolist())
-
-    idx = []
-    # for token in dataset["_token"]:
-    #     idx.append(token2num[token])
-
-
     dataset = dataset.map(
         preprocess_func,
         batched=True,
@@ -263,13 +245,6 @@ def _get_preprocessed_dataset(
         remove_columns=column_names,
         **kwargs,
     )
-
-    
-    
-
-    # dataset = dataset.add_column("query", query)
-    # dataset = dataset.add_column("idx",idx)
-    
 
     if training_args.should_log:
         try:
