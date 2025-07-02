@@ -18,8 +18,8 @@ Mu Xu<sup>1</sup>,
 <sup>2</sup>Xi’an Jiaotong University,
 <sup>3</sup>DAMO Academy, Alibaba Group
 
+**FutureSightDrive (FSDrive)**: The proposed spatio-temporal CoT enables end-to-end autonomous driving **VLA** to **think visually** about trajectory planning and unify visual generation and understanding with minimal data, advancing autonomous driving towards **visual reasoning** for the first time.
 
-Official implementation of **FSDrive** - a VLM can think visually about trajectory planning, advancing autonomous driving towards visual reasoning.
 
 https://github.com/user-attachments/assets/a99a14a3-a892-4cbe-ac1f-66b777d9081b
 
