@@ -18,7 +18,7 @@ train_mm_proj_only: false # choices: [true, false]
 deepspeed: examples/deepspeed/ds_z0_config.json # choices: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
 
 ### dataset
-dataset: test
+dataset: train_cot_motion
 template: qwen2_vl
 cutoff_len: 32768
 max_new_tokens: 2048
