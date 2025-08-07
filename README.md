@@ -118,7 +118,7 @@ llamafactory-cli train ../configs/sft.yaml
 Run the following command in the LLaMA-Factory directory to infer test dataset:
 ```bash
 python scripts/vllm_infer.py \ 
---model_name_or_path saves/qwen2_vl-7b/sft \
+--model_name_or_path saves/qwen2_vl-2b/sft \
 --dataset val_cot_motion \
 --template qwen2_vl \
 --cutoff_len 32768 \
