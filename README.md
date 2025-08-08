@@ -140,7 +140,7 @@ cd ..
 
 python tools/match.py \
 --pred_trajs_path ./LLaMA-Factory/results.jsonl \
---token_traj_path ./LLaMA-Factory/data/train_cot_motion.json
+--token_traj_path ./LLaMA-Factory/data/val_cot_motion.json
 ```
 
 Then evaluate the L2 and collision rate indicators for the end-to-end trajectory planning:
