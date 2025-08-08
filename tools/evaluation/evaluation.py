@@ -52,7 +52,7 @@ def planning_evaluation(pred_trajs_dict, config):
         gt_traj_mask = gt_traj_mask.to(device)
         
         try:
-            data = re.findall(r'\((\d+\.\d+),(\d+\.\d+)\)', pred_trajs_dict[token])
+            data = re.findall(r'\((\-?\d+\.\d+),(\-?\d+\.\d+)\)', pred_trajs_dict[token])
             result = [(float(x), float(y)) for x, y in data]
             output_trajs =  torch.tensor(result)
             output_trajs = output_trajs.reshape(gt_traj_mask.shape)
