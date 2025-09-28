@@ -178,12 +178,12 @@ python ./MoVQGAN/vis.py \
 If you find FSDrive is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry:
 
 ```
-@article{zeng2025FSDrive,
-      title={FutureSightDrive: Thinking Visually with Spatio-Temporal CoT for Autonomous Driving},
-      author={Shuang Zeng and Xinyuan Chang and Mengwei Xie and Xinran Liu and Yifan Bai and Zheng Pan and Mu Xu and Xing Wei},
-      journal={NeurIPS},
-      year={2025}
-      }
+@article{zeng2025futuresightdrive,
+  title={FutureSightDrive: Thinking Visually with Spatio-Temporal CoT for Autonomous Driving},
+  author={Zeng, Shuang and Chang, Xinyuan and Xie, Mengwei and Liu, Xinran and Bai, Yifan and Pan, Zheng and Xu, Mu and Wei, Xing},
+  journal={arXiv preprint arXiv:2505.17685},
+  year={2025}
+}
 ```
 <p align="right"><a href="#readme-top"><img src=https://img.shields.io/badge/back%20to%20top-red?style=flat
 ></a></p>
